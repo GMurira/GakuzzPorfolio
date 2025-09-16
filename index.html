@@ -8,15 +8,19 @@
 </head>
 <body>
   <header>
+  <div class="topbar">
     <h1>Josphat Kurira</h1>
-    <p>Certified Electrician | Residential & Commercial Services</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <button class="menu-toggle">☰</button>
+  </div>
+  <p>Certified Electrician | Residential & Commercial Services</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
 
   <section id="about">
     <h2>About Me</h2>
@@ -69,5 +73,14 @@
     <p>© 2025 Josphat Kurira | Expert Electrician</p>
   </footer>
   <a href="tel:+254795420286" class="fab">📞</a>
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
+
 </body>
 </html>
